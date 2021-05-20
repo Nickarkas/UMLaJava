@@ -46,4 +46,28 @@ public class Asistencia {
         this.fecha = fecha;
     }
 
+    /**
+     * Método agregarAlumno()
+     * @param alumno 
+     */
+    public static void agregarAlumno(Alumno alumno){
+        
+    }
+    /**
+     * Método eliminarAlumno()
+     * @param alumno 
+     */
+    public static void eliminarAlumno(Alumno alumno){
+        
+        /**
+         * Método contarAlumnos()
+         * @return número de alumnos
+         */
+    }
+    public int contarAlumnos(){
+        
+        int n_alumnos = 0;
+        
+        return n_alumnos;
+    }
 }

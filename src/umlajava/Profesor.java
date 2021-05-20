@@ -104,4 +104,39 @@ public class Profesor {
         this.antiguedad = antiguedad;
     }
 
+    /**
+     * Método calcularSueldo() Dividimos la antiguedad entre cinco; pasamos por
+     * switch-case para tener el nuevo sueldo
+     *
+     * @return nuevoSueldo
+     */
+    public double calcularSueldo() {
+
+        double nuevoSueldo = 0;
+
+        int opcion = (getAntiguedad() / 5);
+
+        switch (opcion) {
+            case 1:
+                nuevoSueldo = getBasico() + (getBasico() * 0.1);
+                break;
+            case 2:
+                nuevoSueldo = getBasico() + (getBasico() * 0.2);
+                break;
+            case 3:
+                nuevoSueldo = getBasico() + (getBasico() * 0.3);
+                break;
+            case 4:
+                nuevoSueldo = getBasico() + (getBasico() * 0.4);
+                break;
+            case 5:
+                nuevoSueldo = getBasico() + (getBasico() * 0.5);
+                break;
+
+            default:
+                nuevoSueldo = getBasico();
+        }
+
+        return nuevoSueldo;
+    }
 }
