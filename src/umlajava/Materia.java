@@ -23,8 +23,8 @@ public class Materia {
     /**
      * Constructor por parámetro Materia()
      *
-     * @param nombre
-     * @param titular
+     * @param nombre materia
+     * @param titular profesor materia
      */
     public Materia(String nombre, Profesor titular) {
         this.nombre = nombre;
@@ -34,14 +34,14 @@ public class Materia {
     /**
      * Constructor por parámetro Materia()
      *
-     * @param nombre
+     * @param nombre materia
      */
     public Materia(String nombre){
         this.nombre = nombre;
     }
     /**
      * Método eliminarAsistencia()
-     *
+     * @param asistencia alumnos
      */
     public void eliminarAsistencia(Asistencia asistencia) {
         this.getAsistencias().remove(asistencia);
@@ -50,7 +50,7 @@ public class Materia {
     /**
      * Método agregarAsistencia()
      *
-     * @param asistencia
+     * @param asistencia alumnos
      */
     public void agregarAsistencia(Asistencia asistencia) {
         this.getAsistencias().add(asistencia);
@@ -59,7 +59,7 @@ public class Materia {
     /**
      * Método eliminarAlumno()
      *
-     * @param alumno
+     * @param alumno nombre
      */
     public void eliminarAlumno(Alumno alumno) {
         this.getAlumnos().remove(alumno);
@@ -68,7 +68,7 @@ public class Materia {
     /**
      * Método agregarAlumno()
      *
-     * @param alumno
+     * @param alumno nombre
      */
     public void agregarAlumno(Alumno alumno) {
         this.getAlumnos().add(alumno);
@@ -77,7 +77,7 @@ public class Materia {
     /**
      * Método getNombre()
      *
-     * @return nombre
+     * @return nombre materia
      */
     public String getNombre() {
         return nombre;
@@ -86,7 +86,7 @@ public class Materia {
     /**
      * Método setNombre()
      *
-     * @param nombre
+     * @param nombre materia
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -95,7 +95,7 @@ public class Materia {
     /**
      * Método getTitular()
      *
-     * @return titular
+     * @return titular profesor
      */
     public Profesor getTitular() {
         return titular;
@@ -104,7 +104,7 @@ public class Materia {
     /**
      * Método setTitular()
      *
-     * @param titular
+     * @param titular profesor
      */
     public void setTitular(Profesor titular) {
         this.titular = titular;
@@ -113,7 +113,7 @@ public class Materia {
     /**
      * Método getAlumnos()
      *
-     * @return alumnos
+     * @return alumnos Arraylist()
      */
     public ArrayList<Alumno> getAlumnos() {
         return alumnos;
@@ -122,7 +122,7 @@ public class Materia {
     /**
      * Método setAlumnos()
      *
-     * @param alumno
+     * @param alumno ArrayList()
      */
     public void setAlumnos(ArrayList<Alumno> alumno) {
         this.alumnos = alumno;
@@ -131,7 +131,7 @@ public class Materia {
     /**
      * Método getAsistencias()
      *
-     * @return asistencias
+     * @return asistencias alumnos
      */
     public ArrayList<Asistencia> getAsistencias() {
         return asistencias;
@@ -140,7 +140,7 @@ public class Materia {
     /**
      * Método setAsistencias()
      *
-     * @param asistencia
+     * @param asistencia alumnos
      */
     public void setAsistencias(ArrayList<Asistencia> asistencia) {
         this.asistencias = asistencia;
@@ -149,7 +149,7 @@ public class Materia {
     /**
      * Método calcularInscriptos()
      *
-     * @return Alumnos.size()
+     * @return tamaño ArrayList() alumnos inscritos
      */
     public int calcularInscriptos() {
         return this.getAlumnos().size();
@@ -158,8 +158,8 @@ public class Materia {
     /**
      * Método calcularAsistencia
      *
-     * @param fecha
-     * @return asistencia
+     * @param fecha calendario
+     * @return asistencia alumnos
      */
     public double calcularAsistencia(Date fecha) {
         for (Asistencia asist : this.getAsistencias()) {

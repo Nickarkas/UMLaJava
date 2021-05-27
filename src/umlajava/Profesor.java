@@ -27,10 +27,10 @@ public class Profesor {
     /**
      * Constructor por parámetros Profesor()
      *
-     * @param nombre
-     * @param legajo
-     * @param basico
-     * @param antiguedad
+     * @param nombre profesor
+     * @param legajo profesor
+     * @param basico profesor
+     * @param antiguedad profesor 
      */
     public Profesor(String nombre, int legajo, double basico, int antiguedad) {
         this.nombre = nombre;
@@ -42,7 +42,7 @@ public class Profesor {
     /**
      * Método getNombre()
      *
-     * @return nombre
+     * @return nombre profesor
      */
     public String getNombre() {
         return nombre;
@@ -51,7 +51,7 @@ public class Profesor {
     /**
      * Método getLegajo()
      *
-     * @return legajo
+     * @return legajo profesor
      */
     public int getLegajo() {
         return legajo;
@@ -60,7 +60,7 @@ public class Profesor {
     /**
      * Método getBasico()
      *
-     * @return basico
+     * @return basico profesor
      */
     public double getBasico() {
         return basico;
@@ -69,7 +69,7 @@ public class Profesor {
     /**
      * Método getAntiguedad()
      *
-     * @return antiguedad
+     * @return antiguedad profesor
      */
     public int getAntiguedad() {
         return antiguedad;
@@ -78,7 +78,7 @@ public class Profesor {
     /**
      * Método setNombre()
      *
-     * @param nombre
+     * @param nombre profesor 
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -87,7 +87,7 @@ public class Profesor {
     /**
      * Método setLegajo()
      *
-     * @param legajo
+     * @param legajo profesor
      */
     public void setLegajo(int legajo) {
         this.legajo = legajo;
@@ -96,7 +96,7 @@ public class Profesor {
     /**
      * Método setBasico()
      *
-     * @param basico
+     * @param basico profesor
      */
     public void setBasico(double basico) {
         this.basico = basico;
@@ -105,17 +105,15 @@ public class Profesor {
     /**
      * Método setAntiguedad()
      *
-     * @param antiguedad
+     * @param antiguedad profesor
      */
     public void setAntiguedad(int antiguedad) {
         this.antiguedad = antiguedad;
     }
 
     /**
-     * Método calcularSueldo() Dividimos la antiguedad entre cinco; pasamos por
-     * switch-case para tener el nuevo sueldo
-     *
-     * @return nuevoSueldo
+     * Método calcularSueldo() profesor
+     * @return nuevoSueldo profesor
      */
     public double calcularSueldo() {
         double sueldoIncrementado = this.getBasico();

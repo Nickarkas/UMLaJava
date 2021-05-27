@@ -33,7 +33,7 @@ public class UMLaJava {
     /**
      * Método para agregarCarrera()
      *
-     * @param carrera
+     * @param carrera ArrayList()
      */
     public static void agregarCarrera(Carrera carrera) {
         coleccionCarreras.add(carrera);
@@ -42,7 +42,7 @@ public class UMLaJava {
     /**
      * Método para eliminarCarrera()
      *
-     * @param carrera
+     * @param carrera ArrayList()
      */
     public static void eliminarCarrera(Carrera carrera) {
         coleccionCarreras.remove(carrera);

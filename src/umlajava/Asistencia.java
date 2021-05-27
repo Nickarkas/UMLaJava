@@ -24,7 +24,7 @@ public class Asistencia {
     /**
      * Constructor por parámetro Asistencia()
      *
-     * @param fecha
+     * @param fecha calendario
      */
     public Asistencia(Date fecha) {
         this.fecha = fecha;
@@ -34,7 +34,7 @@ public class Asistencia {
     /**
      * Método getFecha()
      *
-     * @return fecha
+     * @return fecha calendario
      */
     public Date getFecha() {
         return fecha;
@@ -43,7 +43,7 @@ public class Asistencia {
     /**
      * Método setFecha()
      *
-     * @param fecha
+     * @param fecha calendario
      */
     public void setFecha(Date fecha) {
         this.fecha = fecha;
@@ -52,7 +52,7 @@ public class Asistencia {
     /**
      * Método getAlumnos()
      *
-     * @return alumnos
+     * @return alumnos Arraylist()
      */
     public ArrayList<Alumno> getAlumnos() {
         return alumnos;
@@ -60,7 +60,7 @@ public class Asistencia {
 
     /**
      * Método setAlumnos()
-     *
+     * @param Arraylist() de alumnos
      */
     public void setAlumnos(ArrayList<Alumno> alumnos) {
         this.alumnos = alumnos;
@@ -69,7 +69,7 @@ public class Asistencia {
     /**
      * Método agregarAlumno()
      *
-     * @param alumno
+     * @param alumno ArrayList()
      */
     public void agregarAlumno(Alumno alumno) {
         this.alumnos.add(alumno);
@@ -78,7 +78,7 @@ public class Asistencia {
     /**
      * Método eliminarAlumno()
      *
-     * @param alumno
+     * @param alumno ArrayList()
      */
     public void eliminarAlumno(Alumno alumno) {
         this.alumnos.remove(alumno);

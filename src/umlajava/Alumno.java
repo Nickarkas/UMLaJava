@@ -25,8 +25,8 @@ public class Alumno {
     /**
      * Constructor por parámetros Alumno()
      *
-     * @param nombre
-     * @param legajo
+     * @param nombre alumno
+     * @param legajo alumno
      */
     public Alumno(String nombre, int legajo) {
         this.nombre = nombre;
@@ -36,7 +36,7 @@ public class Alumno {
     /**
      * Método getNombre()
      *
-     * @return nombre
+     * @return nombre alumno
      */
     public String getNombre() {
         return nombre;
@@ -45,7 +45,7 @@ public class Alumno {
     /**
      * Método setNombre()
      *
-     * @param nombre
+     * @param nombre alumno
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -54,7 +54,7 @@ public class Alumno {
     /**
      * Método getLegajo()
      *
-     * @return legajo
+     * @return legajo alumno
      */
     public int getLegajo() {
         return legajo;
@@ -63,7 +63,7 @@ public class Alumno {
     /**
      * Método setLegajo()
      *
-     * @param legajo
+     * @param legajo alumno
      */
     public void setLegajo(int legajo) {
         this.legajo = legajo;

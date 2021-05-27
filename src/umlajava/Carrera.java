@@ -19,8 +19,8 @@ public class Carrera {
     /**
      * Constructor por parámetro Carrera()
      *
-     * @param nombre
-     * @param facultad
+     * @param nombre carrera
+     * @param facultad carrera
      */
     public Carrera(String nombre, String facultad) {
         this.nombre = nombre;
@@ -30,7 +30,7 @@ public class Carrera {
     /**
      * Método getNombre()
      *
-     * @return nombre
+     * @return nombre carrera
      */
     public String getNombre() {
         return nombre;
@@ -39,7 +39,7 @@ public class Carrera {
     /**
      * Método setNombre()
      *
-     * @param nombre
+     * @param nombre carrera
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -48,7 +48,7 @@ public class Carrera {
     /**
      * Método getFacultad()
      *
-     * @return facultad
+     * @return facultad nombre
      */
     public String getFacultad() {
         return facultad;
@@ -57,7 +57,7 @@ public class Carrera {
     /**
      * Método setFacultad()
      *
-     * @param facultad
+     * @param facultad nombre
      */
     public void setFacultad(String facultad) {
         this.facultad = facultad;
@@ -65,7 +65,7 @@ public class Carrera {
 
     /**
      * Método getMaterias()
-     * @return materias
+     * @return materias ArratList()
      */
     public ArrayList<Materia> getMaterias() {
         return materias;
@@ -73,7 +73,7 @@ public class Carrera {
        /**
      * Método agregarMateria()
      *
-     * @param materia
+     * @param materia ArrayList()
      */
     public void agregarMateria(Materia materia) {
         this.getMaterias().add(materia);
@@ -82,7 +82,7 @@ public class Carrera {
     /**
      * Método eliminarMateria()
      *
-     * @param materia
+     * @param materia ArrayList()1
      */
     public void eliminarMateria(Materia materia) {
         this.getMaterias().remove(materia);
@@ -91,7 +91,7 @@ public class Carrera {
     /**
      * Método contarMaterias()
      *
-     * @param
+     * @param materia tamaño Arraylist() 
      */
     public int contarMaterias() {
         return this.getMaterias().size();
@@ -100,8 +100,8 @@ public class Carrera {
     /**
      * Método encontrarMateria()
      *
-     * @param nombre
-     * @return Materia
+     * @param nombre Materia
+     * @return Materia nombre
      */
     public Materia encontrarMateria(String nombre) {
         for (Materia m : this.getMaterias()) {
