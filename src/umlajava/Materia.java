@@ -31,7 +31,14 @@ public class Materia {
         this.titular = titular;
 
     }
-
+    /**
+     * Constructor por parámetro Materia()
+     *
+     * @param nombre
+     */
+    public Materia(String nombre){
+        this.nombre = nombre;
+    }
     /**
      * Método eliminarAsistencia()
      *

@@ -71,8 +71,8 @@ public class Asistencia {
      *
      * @param alumno
      */
-    public static void agregarAlumno(Alumno alumno) {
-        this.getAlumnos().add(alumno);
+    public void agregarAlumno(Alumno alumno) {
+        this.alumnos.add(alumno);
     }
 
     /**
@@ -80,8 +80,8 @@ public class Asistencia {
      *
      * @param alumno
      */
-    public static void eliminarAlumno(Alumno alumno) {
-        this.getAlumnos().remove(alumno);
+    public void eliminarAlumno(Alumno alumno) {
+        this.alumnos.remove(alumno);
     }
 
     /**
@@ -94,4 +94,5 @@ public class Asistencia {
 
         return this.getAlumnos().size();
     }
+
 }
