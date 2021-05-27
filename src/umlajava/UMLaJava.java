@@ -1,6 +1,6 @@
 /**
  * Clase Main ejercicio propuesto.
- *
+ * version 0.5
  */
 package umlajava;
 
