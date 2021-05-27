@@ -8,6 +8,7 @@ package umlajava;
  * Importamos el paquete de Java -> Date
  */
 import java.util.Date;
+import java.util.ArrayList;
 
 /**
  * @author nmcc
@@ -18,6 +19,7 @@ public class Asistencia {
      * Atributo fecha
      */
     private Date fecha;
+    private static ArrayList<Alumno> alumnos;
 
     /**
      * Constructor por parámetro Asistencia()
@@ -26,6 +28,7 @@ public class Asistencia {
      */
     public Asistencia(Date fecha) {
         this.fecha = fecha;
+        
     }
 
     /**
@@ -47,27 +50,48 @@ public class Asistencia {
     }
 
     /**
-     * Método agregarAlumno()
-     * @param alumno 
+     * Método getAlumnos()
+     *
+     * @return alumnos
      */
-    public static void agregarAlumno(Alumno alumno){
-        
+    public ArrayList<Alumno> getAlumnos() {
+        return alumnos;
     }
+
+    /**
+     * Método setAlumnos()
+     *
+     */
+    public void setAlumnos(ArrayList<Alumno> alumnos) {
+        this.alumnos = alumnos;
+    }
+
+    /**
+     * Método agregarAlumno()
+     *
+     * @param alumno
+     */
+    public static void agregarAlumno(Alumno alumno) {
+        this.getAlumnos().add(alumno);
+    }
+
     /**
      * Método eliminarAlumno()
-     * @param alumno 
+     *
+     * @param alumno
      */
-    public static void eliminarAlumno(Alumno alumno){
-        
-        /**
-         * Método contarAlumnos()
-         * @return número de alumnos
-         */
+    public static void eliminarAlumno(Alumno alumno) {
+        this.getAlumnos().remove(alumno);
     }
-    public int contarAlumnos(){
-        
-        int n_alumnos = 0;
-        
-        return n_alumnos;
+
+    /**
+     * Método contarAlumnos()
+     *
+     * @return número de alumnos
+     */
+
+    public int contarAlumnos() {
+
+        return this.getAlumnos().size();
     }
 }

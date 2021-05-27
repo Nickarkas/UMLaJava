@@ -18,6 +18,13 @@ public class Profesor {
     private int antiguedad;
 
     /**
+     * Constructor por defecto Profesor()
+     */
+    public Profesor() {
+
+    }
+
+    /**
      * Constructor por parámetros Profesor()
      *
      * @param nombre
@@ -111,32 +118,13 @@ public class Profesor {
      * @return nuevoSueldo
      */
     public double calcularSueldo() {
+        double sueldoIncrementado = this.getBasico();
 
-        double nuevoSueldo = 0;
+        int cantidadDeAumentos = (int) (this.getAntiguedad() / 5);
 
-        int opcion = (getAntiguedad() / 5);
-
-        switch (opcion) {
-            case 1:
-                nuevoSueldo = getBasico() + (getBasico() * 0.1);
-                break;
-            case 2:
-                nuevoSueldo = getBasico() + (getBasico() * 0.2);
-                break;
-            case 3:
-                nuevoSueldo = getBasico() + (getBasico() * 0.3);
-                break;
-            case 4:
-                nuevoSueldo = getBasico() + (getBasico() * 0.4);
-                break;
-            case 5:
-                nuevoSueldo = getBasico() + (getBasico() * 0.5);
-                break;
-
-            default:
-                nuevoSueldo = getBasico();
+        for (int x = 1; x <= cantidadDeAumentos; x++) {
+            sueldoIncrementado += (this.getBasico() * 0.10);
         }
-
-        return nuevoSueldo;
+        return sueldoIncrementado;
     }
 }

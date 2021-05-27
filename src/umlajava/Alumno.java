@@ -16,6 +16,13 @@ public class Alumno {
     private int legajo;
 
     /**
+     * Constructor por defecto Alumno()
+     */
+    public Alumno() {
+
+    }
+
+    /**
      * Constructor por parámetros Alumno()
      *
      * @param nombre
